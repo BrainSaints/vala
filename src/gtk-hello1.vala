@@ -10,9 +10,10 @@ int main (string[] args)
 	window.destroy.connect (Gtk.main_quit);
 
 	var button_hello = new Gtk.Button.with_label ("Click me!");
+	
 	button_hello.clicked.connect (() => {
-    button_hello.label = "Hello World!";
-    button_hello.set_sensitive (false);
+    		button_hello.label = "Hello World!";
+    		button_hello.set_sensitive (false);
 	});
 
 	window.add (button_hello);
